@@ -1,0 +1,47 @@
+canvas {
+    width: 350px;
+    border: 1px solid rgb(10,10,10);
+}
+
+.buttons {
+    font-family: ariel;
+    font-size: 15px;
+    background-color: rgb(255,250,240);
+    border: 0.5px solid rgb(10,10,10);
+}
+h1 {
+    color: darkslategray;
+}
+body {
+    color: maroon;
+    background-color: honeydew;
+}
+
+#graybut {
+    background-color: silver;
+}
+
+#redbut {
+    background-color: crimson;
+    color: white;
+}
+#rainbow{
+     background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    color: white;
+}
+
+th{
+    text-align: left;
+}
+#steg{
+    font-family: ariel;
+    font-size: 20px;
+    font-weight:bold;
+   color: saddlebrown;
+}
+#ret{
+     font-family: ariel;
+    font-size: 20px;
+    font-weight:bold;
+   color: saddlebrown;
+}

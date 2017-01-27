@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<h1>
+Image Manipulation
+</h1>
+<link rel="stylesheet" href="filters.css">
+<script src="filters.js" > </script>
+<script src="steg.js"> </script>
+<script src = "http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" ></script>
+</HEAD>
+<BODY>
+<Table>
+<col width="500">
+<col width = "700">
+<tr>
+<th>
+<h3>
+Image Filters
+</h3>
+</th>
+<th>
+<h3>
+Steganography
+</h3>
+</th>
+</tr>
+<tr>
+<td id="filtercol">
+<div>
+<!--<h4>
+Upload Image:
+</h4>-->
+<canvas id="canvas">
+</canvas>
+<br>
+Upload Image: 
+<input type="file" multiple="false" accept="image/*" id="upload" onchange="upload()" class="buttons">
+<br><br>
+<div>
+
+Filters:
+<br>
+<input type="button" value="Grayscale" onclick="makeGray()" id="graybut" class="buttons">
+     
+<input type="button" value="Red" onclick="makeRed()" id="redbut" class="buttons">
+  <br><br>
+<input type="button" value="Rainbow" onclick="makeRainbow()" id="rainbow" class="buttons">   
+    
+<input type="button" value="Blur" onclick="makeblur()" id="blur" class="buttons">    
+<br><br>
+<input type="button" value="Reset image" onclick="reset()" id="reset" class="buttons">
+</div>
+</div>
+</td>
+
+<td >
+<div>
+<!--<h4>
+Upload Image:
+</h4> -->
+<canvas id="canvas1">
+</canvas>
+<br>
+Upload message
+<input type="file" multiple="false" accept="image/*"  onchange="uploadMess()" id="messg">
+<br><br>
+<canvas id="canvas2">
+</canvas>
+<br>
+Upload Carrier
+<input type="file" accept="image/*"  onchange="uploadPack()" id="carrier">
+<br>
+</div>
+</td>
+</tr>
+<tr>
+<td id="filterbuttons">
+
+</td>
+
+<td id="stegbuttons">
+<p>
+<br>
+<input  type="button" value="Hide the message" onclick="callSteganography()" id="steg">
+<br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+
+<div>
+<canvas id="canvas3">
+</canvas>
+<br>
+<br>
+<input  type="button" value="Retrieve the message" onclick="retrieve()" id="ret">
+</div>
+</td>
+</tr>
+
+</table>
+
+</BODY>
+</HTML>
